@@ -9,17 +9,19 @@ import AddUser from "./pages/Users/AddUser.jsx";
 
 function App() {
   return (
-    <ChakraProvider>
-      <div className="App">
-        <Header/>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/about" element={<About/>}/>
-          <Route path="/users" element={<Users/>}/>
-          <Route path="/add-user" element={<AddUser/>}/>
-        </Routes>
-      </div>
-    </ChakraProvider>
+    <>
+      <Header/>
+      <ChakraProvider>
+        <div>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/users" element={<Users/>}/>
+            <Route path="/add-user" element={<AddUser/>}/>
+          </Routes>
+        </div>
+      </ChakraProvider>
+    </>
   );
 }
 

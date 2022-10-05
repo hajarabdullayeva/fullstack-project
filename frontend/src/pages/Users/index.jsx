@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Table, Thead, Tbody, Tr, Th, Td, TableContainer, Button, WrapItem
 } from '@chakra-ui/react'
-import {Link} from "@mui/material";
+import {Link} from "react-router-dom";
 
 const Users = () => {
   return (
@@ -23,15 +23,14 @@ const Users = () => {
           </Thead>
           <Tbody>
             <Tr>
-              <Td>inches</Td>
-              <Td>millimetres (mm)</Td>
-              <Td>2skjds</Td>
+              <Td>Hajar</Td>
+              <Td>Abdullayeba</Td>
+              <Td>08.08.2001</Td>
               <Td><Button colorScheme='pink'>Delete</Button></Td>
             </Tr>
           </Tbody>
         </Table>
       </TableContainer>
-
     </>
   );
 };
