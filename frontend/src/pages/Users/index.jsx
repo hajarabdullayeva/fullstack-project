@@ -1,17 +1,17 @@
 import React from 'react';
-import {
-  Table, Thead, Tbody, Tr, Th, Td, TableContainer, Button, WrapItem
-} from '@chakra-ui/react'
-import {Link} from "react-router-dom";
+import { Table, Thead, Tbody, Tr, Th, Td, TableContainer, Button, WrapItem } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 const Users = () => {
   return (
     <>
       <WrapItem>
-        <Button colorScheme='pink'><Link to="/add-user">Add User</Link></Button>
+        <Button colorScheme="pink">
+          <Link to="/add-user">Add User</Link>
+        </Button>
       </WrapItem>
       <TableContainer>
-        <Table variant='simple'>
+        <Table variant="simple">
           <Thead>
             <Tr>
               <Th>First name</Th>
@@ -26,7 +26,9 @@ const Users = () => {
               <Td>Hajar</Td>
               <Td>Abdullayeba</Td>
               <Td>08.08.2001</Td>
-              <Td><Button colorScheme='pink'>Delete</Button></Td>
+              <Td>
+                <Button colorScheme="pink">Delete</Button>
+              </Td>
             </Tr>
           </Tbody>
         </Table>
